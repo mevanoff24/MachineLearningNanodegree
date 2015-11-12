@@ -42,9 +42,7 @@ def explore_city_data(city_data):
 
     # Please calculate the following values using the Numpy library
     # Size of data?
-    print 'Number of Data Points:', housing_features.shape[0] * housing_features.shape[1]
-    print 'Number of Rows:', housing_features.shape[0]
-    print 'Number of Columns:', housing_features.shape[1]
+    print 'Number of Data Points:', housing_features.shape[0]
     # Number of features?
     print 'Number of Features:', housing_features.shape[1]
     print '\n'
@@ -68,7 +66,7 @@ def performance_metric(label, prediction):
     ###################################
     # mean squared error
     mse = mean_squared_error(label, prediction)
-    mae = mean_absolute_error(label, prediction)
+    # mae = mean_absolute_error(label, prediction)
 
     # http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
     return mse
@@ -198,6 +196,7 @@ def fit_predict_model(city_data):
     y = reg.predict(x)
     print "House: " + str(x)
     print "Prediction: " + str(y)
+    print reg.best_params_
 
 
 def main():
