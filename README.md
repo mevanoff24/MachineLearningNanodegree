@@ -4,7 +4,17 @@
 
 ###### Machine learning engineer and apply predictive models to massive data sets in fields like education, finance, healthcare or robotics.
 
-#### Requirements for project 2
+#### Project 1: Predicting Boston Housing Prices
+
+##### Requirements for project 1
+
+- Evaluating Model Performance
+- Model Evaluation & Validation
+- Model Optimization
+
+#### Project 2: Building a Student Intervention System
+
+##### Requirements for project 2
 
 Using supervised learning to build a Student Intervention System.
 
@@ -22,7 +32,9 @@ Using supervised learning to build a Student Intervention System.
 - Bayesian Inference
 - Ensemble learning
 
-#### Requirements for project 3
+#### Project 3: Creating Customer Segments
+
+##### Requirements for project 3
 
 Using unsupervised learning to create customer segments.
 
@@ -33,7 +45,9 @@ Using unsupervised learning to create customer segments.
 - PCA
 - Feature Transformation
 
-####Requirements for project 4
+#### Project 4: Train a Smartcab to Drive
+
+##### Requirements for project 4
 
 Using reinforcement learning to train a smart cab how to drive
 
@@ -41,3 +55,7 @@ Using reinforcement learning to train a smart cab how to drive
 - Reinforcement Learning
 - Game Theory
 - More Game Theory beginning at Stochastic games and Multiagent RL
+
+#### Project 5: Capstone Project
+
+Predict The Next Pitch
