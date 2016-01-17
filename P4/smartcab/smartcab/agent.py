@@ -20,15 +20,16 @@ class LearningAgent(Agent):
         # self.Action = ['forward', 'left', 'right', None]
         self.state_transitions = {}
         # to check percent failures 
-        self.failed_deadline = []
-        self.trial_number = 1
+        # self.failed_deadline = []
+        # self.trial_number = 1
 
     def reset(self, destination = None):
         self.planner.route_to(destination)
         # TODO: Prepare for a new trip; reset any variables here, if required
         # reset state transition 
         self.state_transitions = {}
-        self.trial_number += 1
+        # increment trial number 
+        # self.trial_number += 1
 
     def update(self, t):
         # Gather inputs
@@ -90,7 +91,7 @@ class LearningAgent(Agent):
                     self.Q[current_state][self.Action.index(action)] = \
                         (1 - self.alpha) * self.Q[current_state][self.Action.index(action)] + (self.alpha * reward)
                     self.failed_deadline.append(0)
-        print 'Failed Percent:', (len(self.failed_deadline) / self.trial_number)
+        # print 'Failed Percent:', (len(self.failed_deadline) / self.trial_number)
 
         update_Q(self)
 
@@ -106,8 +107,8 @@ def run():
     e.set_primary_agent(a, enforce_deadline=True)  # set agent to track
 
     # Now simulate it
-    sim = Simulator(e, update_delay=0.000001)  # reduce update_delay to speed up simulation
-    sim.run(n_trials=150)  # press Esc or close pygame window to quit
+    sim = Simulator(e, update_delay=1.0)  # reduce update_delay to speed up simulation
+    sim.run(n_trials=100)  # press Esc or close pygame window to quit
 
 
 if __name__ == '__main__':
