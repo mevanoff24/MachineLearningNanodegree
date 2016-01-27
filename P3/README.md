@@ -2,6 +2,10 @@
 
 Unsupervised Learning Project
 
+## Description
+
+Analyzed annual spending amounts for internal structure to understand the variation in the different types of customers that a wholesale distributor interacts with.
+
 ## Template code
 
 In this directory (`customer_segments/`), run `ipython notebook`, open `customer_segments.ipynb` and follow the instructions.
