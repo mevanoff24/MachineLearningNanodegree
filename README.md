@@ -59,3 +59,11 @@ Using reinforcement learning to train a smart cab how to drive
 #### Project 5: Capstone Project
 
 Predict The Next Pitch
+
+- Python
+- Pandas
+- Web Scraping
+- Machine Learning
+- Feature Creating
+- Sklearn
+- Clustering
