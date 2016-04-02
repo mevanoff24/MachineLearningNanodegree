@@ -67,3 +67,6 @@ Predict The Next Pitch
 - Feature Creating
 - Sklearn
 - Clustering
+
+###### Currently a Code Reviewer for this Nanodegree
+
